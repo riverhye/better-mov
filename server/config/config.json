@@ -1,0 +1,16 @@
+{
+    "development": {
+        "host": "127.0.0.1",
+        "database": "db_movie",
+        "user": "user",
+        "password": "name123$",
+        "dialect": "mysql"
+    },
+    "production": {
+        "host": "",
+        "database": "",
+        "user": "",
+        "password": "",
+        "dialect": "mysql"
+    }
+}
