@@ -6,13 +6,12 @@ import { useState } from 'react';
 function SignIn() {
     const [email, setEmail] = useState('');
     const [pw, setPw] = useState('');
-    const emailCheck = (e) => {
+    const getEmail = (e) => {
         setEmail(e.target.value);
-        console.log('email', email)
+        // 이거 담아서 뭐하려고? 서버에 전송.
     }
-    const pwCheck = (e) => {
+    const getPw = (e) => {
         setPw(e.target.value);
-        console.log('pw', pw)
     };
     return (
       <>
@@ -20,11 +19,11 @@ function SignIn() {
         <Form>
           <Form.Group className="mb-3" controlId="formGroupEmail">
             <Form.Label>이메일</Form.Label>
-            <Form.Control onChange={emailCheck} type="email" placeholder="이메일을 입력하세요." />
+            <Form.Control onChange={getEmail()} type="email" placeholder="이메일을 입력하세요." />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formGroupPassword">
             <Form.Label>비밀번호</Form.Label>
-            <Form.Control onChange={pwCheck} type="password" placeholder="비밀번호는 특수문자를 포함한 8자 입력하세요." />
+            <Form.Control onChange={getPw()} type="password" placeholder="비밀번호는 특수문자를 포함한 8자 입력하세요." />
           </Form.Group>
         </Form>
           <Button onClick={(e)=>{e.preventDefault()}} type="submit" variant="secondary" size="sm">

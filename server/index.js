@@ -4,7 +4,7 @@ const port = 8000;
 const cors = require('cors');
 
 app.get('/', (req, res) => {
-    res.send('hi');
+    res.send('hi main');
 });
 
 app.use(express.json());
