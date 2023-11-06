@@ -7,7 +7,8 @@ function Header() {
                 Main
             </div>
             <div>
-                <Link to='/sigin'>마이페이지</Link>
+                <Link to='/sigin'>로그인</Link>
+                <Link to='/signup'>회원가입</Link>
             </div>
         </>
     )
